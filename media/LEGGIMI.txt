@@ -1,0 +1,12 @@
+CARTELLA DELLE FOTO DEL CAROSELLO (home)
+
+Il carosello mostra, in quest'ordine: Foto1, Foto3, Foto6, Foto4, Foto5, Foto7, Foto2.
+
+PER SOSTITUIRE UNA FOTO
+Metti qui la nuova immagine con lo STESSO NOME del file da sostituire (es. Foto3.jpg).
+Non serve toccare il codice.
+
+CONSIGLI
+- Formato JPG, verticale 4:5 (consigliato 720 x 900 px), sotto i 150 KB.
+- Se la nuova foto ha un'altra estensione (es. .png), il nome non coincide: va cambiato nel file index.html.
+- Se cambia il soggetto, aggiorna anche il testo descrittivo (alt) di quella foto in index.html.
