@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MilaxPrint3D | Stampa 3D su misura: figure, collezionabili e oggetti personalizzati</title>
+<meta name="description" content="MilaxPrint3D realizza stampe 3D su misura: figure e collezionabili, oggetti personalizzati, ricambi e prototipi. Guarda i lavori e richiedi la tua stampa.">
+<meta name="theme-color" content="#070b16">
+<meta property="og:title" content="MilaxPrint3D | Stampa 3D su misura">
+<meta property="og:description" content="Figure, collezionabili, oggetti personalizzati e prototipi stampati in 3D.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preload" href="assets/fonts/chakra-petch-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+<script src="theme.js"></script>
+<script src="fx.js" defer></script>
+</head>
+<body>
+<div class="bg-fx" aria-hidden="true"><canvas id="fxBase"></canvas><canvas id="fxLive"></canvas></div>
+
+<header class="site-header">
+  <div class="wrap head-in">
+    <a class="brand" href="#top" aria-label="MilaxPrint3D, torna in alto">
+      <img src="assets/logo-gradient.png" alt="" width="34" height="42">
+      <span>MilaxPrint3D</span>
+    </a>
+    <nav class="nav" aria-label="Principale">
+      <a class="btn btn-ghost btn-home" href="#top">Home</a>
+      <a class="link nav-hide" href="#cosa-stampo">Progetti di stampa</a>
+      <a class="link nav-hide" href="#stampa-3d">La stampa 3D</a>
+      <a class="btn btn-primary" href="#richiesta">Richiedi una stampa</a>
+      <button class="theme-toggle" type="button" id="themeToggle" aria-label="Passa alla modalità chiara" aria-pressed="false" title="Passa alla modalità chiara"><svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M5.3 18.7 7 17M17 7l1.7-1.7"/></svg><svg class="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.6 8.6 0 1 0 10.7 10.7z"/></svg></button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero" aria-labelledby="titolo">
+    <div class="wrap">
+      <div class="logo-print play" id="logoPrint">
+        <img src="assets/logo-gradient.png" alt="Logo MilaxPrint3D" width="380" height="464">
+      </div>
+      <h1 id="titolo" class="grad-text">MilaxPrint3D</h1>
+      <p class="tag">Idee, figure e oggetti su misura, stampati in 3D strato dopo strato.</p>
+    </div>
+  </section>
+
+  <section class="showcase" aria-labelledby="titolo-lavori">
+    <div class="wrap">
+      <div class="showcase-head">
+        <h2 id="titolo-lavori">Gli ultimi lavori</h2>
+        <a class="btn btn-ghost" href="https://www.instagram.com/milax_print3d" target="_blank" rel="noopener"><svg class="ig-ico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>Vai al profilo Instagram @milax_print3d</a>
+      </div>
+      <div class="carousel" role="region" aria-roledescription="carosello" aria-label="Ultime foto dal profilo Instagram">
+        <button class="arrow prev" type="button" aria-label="Foto precedente"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 4 7 12l8 8"/></svg></button>
+        <div class="track" id="track" tabindex="0">
+          <a class="slide" href="https://www.instagram.com/milax_print3d" target="_blank" rel="noopener" aria-label="Figura di Iron Man stampata in 3D su una base con nuvole bianche. Apri il profilo Instagram">
+            <img src="media/Foto1.jpg" alt="Figura di Iron Man stampata in 3D su una base con nuvole bianche" width="720" height="900">
+          </a>
+          <a class="slide" href="https://www.instagram.com/milax_print3d" target="_blank" rel="noopener" aria-label="Lampada a forma di frutto con decori a spirale, illuminata di viola. Apri il profilo Instagram">
+            <img src="media/Foto3.jpg" alt="Lampada a forma di frutto con decori a spirale, illuminata di viola" width="720" height="900">
+          </a>
+          <a class="slide" href="https://www.instagram.com/milax_print3d" target="_blank" rel="noopener" aria-label="Mano rossa con dita nere e artigli, stampata in 3D. Apri il profilo Instagram">
+            <img src="media/Foto6.jpg" alt="Mano rossa con dita nere e artigli, stampata in 3D" width="720" height="900">
+          </a>
+          <a class="slide" href="https://www.instagram.com/milax_print3d" target="_blank" rel="noopener" aria-label="Maschera metallica con rivetti stampata in 3D. Apri il profilo Instagram">
+            <img src="media/Foto4.jpg" alt="Maschera metallica con rivetti stampata in 3D" width="720" height="900" decoding="async">
+          </a>
+          <a class="slide" href="https://www.instagram.com/milax_print3d" target="_blank" rel="noopener" aria-label="Rosa rossa che gocciola su un piccolo piedistallo. Apri il profilo Instagram">
+            <img src="media/Foto5.jpg" alt="Rosa rossa che gocciola su un piccolo piedistallo" width="720" height="900" decoding="async">
+          </a>
+          <a class="slide" href="https://www.instagram.com/milax_print3d" target="_blank" rel="noopener" aria-label="Vaso bianco dentro una ciotola dalle forme intrecciate. Apri il profilo Instagram">
+            <img src="media/Foto7.jpg" alt="Vaso bianco dentro una ciotola dalle forme intrecciate" width="720" height="900" decoding="async">
+          </a>
+          <a class="slide" href="https://www.instagram.com/milax_print3d" target="_blank" rel="noopener" aria-label="Portapenne rosso a forma di cuore anatomico. Apri il profilo Instagram">
+            <img src="media/Foto2.jpg" alt="Portapenne rosso a forma di cuore anatomico" width="720" height="900" decoding="async">
+          </a>
+        </div>
+        <button class="arrow next" type="button" aria-label="Foto successiva"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4l8 8-8 8"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <div class="layers" aria-hidden="true"></div>
+
+  <section class="block" id="cosa-stampo" aria-labelledby="t-cosa">
+    <div class="wrap">
+      <div class="block-head">
+        <h2 id="t-cosa">Progetti di Stampa</h2>
+        <p class="lead">Se un oggetto si può modellare, in genere si può anche stampare. Ecco i lavori che mi chiedono più spesso.</p>
+      </div>
+      <ul class="cats">
+        <li><h3>Figure e collezionabili</h3><p>Statuette, busti, repliche e pezzi da esposizione, dalle linee pulite ai dettagli più fini.</p></li>
+        <li><h3>Anime, manga e sci-fi</h3><p>Personaggi, oggetti iconici e modellini ispirati ai tuoi universi preferiti.</p></li>
+        <li><h3>Sport e calcio</h3><p>Omaggi a campioni e squadre del cuore, per tifosi e appassionati.</p></li>
+        <li><h3>Oggetti personalizzati</h3><p>Portachiavi, targhe, segnaposto e articoli con nomi, loghi e disegni a scelta.</p></li>
+        <li><h3>Ricambi e componenti</h3><p>Il pezzo che non si trova più o che serve di una forma particolare.</p></li>
+        <li><h3>Prototipi e modellini</h3><p>Dal primo esemplare di un'idea a un modello da toccare con mano.</p></li>
+        <li class="wide"><h3>Hai un'idea fuori dagli schemi?</h3><p>Raccontamela nel modulo di richiesta: guardo insieme a te cosa si può fare.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="layers" aria-hidden="true"></div>
+
+  <section class="block alt" id="stampa-3d" aria-labelledby="t-info">
+    <div class="wrap info">
+      <div>
+        <h2 id="t-info">Che cos'è la stampa 3D</h2>
+        <p class="lead" style="margin-top:12px">Un oggetto virtuale diventa un oggetto reale: la stampante lo costruisce un sottile strato alla volta, partendo da un filo di materiale fuso.</p>
+        <ul class="facts">
+          <li><strong>Su misura.</strong> Ogni pezzo nasce da un modello 3D: forma, dimensioni e dettagli si adattano all'idea.</li>
+          <li><strong>Molti colori.</strong> Si lavora con filamenti di colori e finiture diversi, per risultati vivaci o sobri.</li>
+          <li><strong>Dal file o dall'idea.</strong> Puoi partire da un modello già pronto, da un disegno, da una foto o da una semplice descrizione.</li>
+          <li><strong>Pezzi unici o piccole serie.</strong> Va bene per un regalo singolo come per più esemplari uguali.</li>
+          <li><strong>Produzione con Bambu Lab.</strong> Stampo con macchine Bambu Lab, pensate per precisione e qualità costante.</li>
+        </ul>
+      </div>
+      <figure class="stack" style="margin:0" aria-label="Schema di un oggetto costruito a strati">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        <figcaption>Strato dopo strato, fino all'oggetto finito.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="t-come">
+    <div class="wrap">
+      <div class="block-head">
+        <h2 id="t-come">Come funziona</h2>
+        <p class="lead">Quattro passaggi, nessun giro complicato.</p>
+      </div>
+      <ol class="steps">
+        <li><h3>Racconta l'idea</h3><p>Compila il modulo con quello che vuoi realizzare.</p></li>
+        <li><h3>Ci sentiamo</h3><p>Ti ricontatto per chiarire i dettagli e le tue preferenze.</p></li>
+        <li><h3>Si stampa</h3><p>Preparo il modello e lo realizzo con cura.</p></li>
+        <li><h3>Ricevi il tuo pezzo</h3><p>Ci accordiamo insieme su come farti arrivare l'oggetto.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <div class="layers" aria-hidden="true"></div>
+
+  <section class="block alt" id="richiesta" aria-labelledby="t-richiesta">
+    <div class="wrap req">
+      <aside>
+        <h2 id="t-richiesta">Richiedi una stampa</h2>
+        <p class="lead" style="margin-top:12px">Più dettagli mi dai, meglio posso capire cosa hai in mente. Ti ricontatto io appena possibile.</p>
+        <div class="ig-alt">
+          <p style="margin-bottom:12px"><strong>Preferisci scrivermi su Instagram?</strong></p>
+          <a class="btn btn-blue" href="https://www.instagram.com/milax_print3d" target="_blank" rel="noopener"><svg class="ig-ico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>Apri il profilo Instagram</a>
+          <p style="margin:12px 0 0;font-size:.95rem;color:var(--muted)">Dal profilo tocca «Messaggio» per scrivermi.</p>
+        </div>
+        <p style="margin-top:18px">Oppure scrivimi una email: <a href="mailto:milaxprint3d@libero.it">milaxprint3d@libero.it</a></p>
+      </aside>
+
+      <form id="form" action="https://formspree.io/f/xjywojzq" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="Nuova richiesta di stampa 3D dal sito MilaxPrint3D">
+        <div class="hp" aria-hidden="true"><label>Non compilare<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+
+        <div class="row">
+          <div class="field"><label for="nome">Nome</label><input id="nome" name="nome" type="text" autocomplete="given-name" required></div>
+          <div class="field"><label for="cognome">Cognome</label><input id="cognome" name="cognome" type="text" autocomplete="family-name" required></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"></div>
+          <div class="field"><label for="telefono">Telefono</label><input id="telefono" name="telefono" type="tel" autocomplete="tel"></div>
+        </div>
+        <p class="contact-note">Indica almeno un recapito, email o telefono, così posso ricontattarti.</p>
+
+        <div class="field">
+          <label for="tipo">Che cosa vuoi realizzare?</label>
+          <select id="tipo" name="tipo_richiesta" required>
+            <option value="" selected disabled>Scegli una categoria</option>
+            <option>Figura o collezionabile</option>
+            <option>Anime, manga o sci-fi</option>
+            <option>Sport o calcio</option>
+            <option>Oggetto personalizzato</option>
+            <option>Ricambio o componente</option>
+            <option>Prototipo o modellino</option>
+            <option>Regalo o gadget</option>
+            <option>Altro</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="descrizione">Descrivi la tua idea</label>
+          <textarea id="descrizione" name="descrizione" required placeholder="Cosa deve essere, a cosa serve, che aspetto deve avere..."></textarea>
+        </div>
+        <div class="row">
+          <div class="field"><label for="dimensioni">Dimensioni indicative <small>(facoltativo)</small></label><input id="dimensioni" name="dimensioni" type="text" placeholder="Es. alto circa 15 cm"></div>
+          <div class="field"><label for="quantita">Quantità <small>(facoltativo)</small></label><input id="quantita" name="quantita" type="text" placeholder="Es. 1 pezzo"></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="colori">Colori preferiti <small>(facoltativo)</small></label><input id="colori" name="colori" type="text" placeholder="Es. arancione e nero"></div>
+          <div class="field"><label for="scadenza">Entro quando ti serve <small>(facoltativo)</small></label><input id="scadenza" name="scadenza" type="text" placeholder="Es. entro Natale"></div>
+        </div>
+        <div class="field">
+          <label for="riferimenti">Link a immagini o file di riferimento <small>(facoltativo)</small></label>
+          <input id="riferimenti" name="riferimenti" type="text" placeholder="Foto, modello 3D, cartella condivisa...">
+        </div>
+        <div class="field">
+          <label for="contatto">Come preferisci essere ricontattato?</label>
+          <select id="contatto" name="contatto_preferito" required>
+            <option value="" selected disabled>Scegli</option>
+            <option>Email</option>
+            <option>Telefono</option>
+            <option>WhatsApp</option>
+            <option>Messaggio su Instagram</option>
+          </select>
+        </div>
+
+        <div class="field check">
+          <input id="privacy" name="consenso_privacy" type="checkbox" value="Sì" required>
+          <label for="privacy">Ho letto l'<a href="privacy.html" target="_blank" rel="noopener">informativa sulla privacy</a> e acconsento al trattamento dei miei dati per essere ricontattato in merito alla mia richiesta.</label>
+        </div>
+
+        <button class="btn btn-primary btn-lg" type="submit" id="invia">Invia la richiesta</button>
+        <div class="status" id="status" role="status" aria-live="polite" tabindex="-1"></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <img class="logo-d" src="assets/logo-white.png" alt="MilaxPrint3D" width="38" height="46"><img class="logo-l" src="assets/logo-gradient.png" alt="MilaxPrint3D" width="38" height="46">
+      <nav aria-label="Informazioni legali e social">
+        <a href="https://www.instagram.com/milax_print3d" target="_blank" rel="noopener"><svg class="ig-ico" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>Instagram</a>
+        <a href="mailto:milaxprint3d@libero.it">Email</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="cookie.html">Cookie</a>
+      </nav>
+    </div>
+    <p class="copy">&copy; <span id="anno">2026</span> MilaxPrint3D. Sito di presentazione dei lavori di stampa 3D.</p>
+  </div>
+</footer>
+
+<script>
+const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+document.getElementById("anno").textContent = new Date().getFullYear();
+
+/* ---------- Animazione logo: si ripete su Home e logo in alto ---------- */
+const logoPrint = document.getElementById("logoPrint");
+function replayLogo() {
+  logoPrint.classList.remove("play");
+  void logoPrint.offsetWidth;
+  logoPrint.classList.add("play");
+}
+document.querySelectorAll('a[href="#top"]').forEach(function (a) {
+  a.addEventListener("click", function (e) {
+    e.preventDefault();
+    if (window.scrollY < 4) { replayLogo(); return; }
+    window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+    function onScroll() {
+      if (window.scrollY <= 2) {
+        window.removeEventListener("scroll", onScroll);
+        replayLogo();
+      }
+    }
+    window.addEventListener("scroll", onScroll, { passive: true });
+  });
+});
+
+/* ---------- Carosello ---------- */
+const track = document.getElementById("track");
+
+function step(dir) {
+  const first = track.querySelector(".slide");
+  if (!first) return;
+  const w = first.getBoundingClientRect().width + 18;
+  const atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 8;
+  const atStart = track.scrollLeft <= 4;
+  if (dir > 0 && atEnd) track.scrollTo({ left: 0 });
+  else if (dir < 0 && atStart) track.scrollTo({ left: track.scrollWidth });
+  else track.scrollBy({ left: dir * w });
+}
+document.querySelector(".arrow.prev").addEventListener("click", function () { step(-1); });
+document.querySelector(".arrow.next").addEventListener("click", function () { step(1); });
+track.addEventListener("keydown", function (e) {
+  if (e.key === "ArrowRight") { e.preventDefault(); step(1); }
+  if (e.key === "ArrowLeft") { e.preventDefault(); step(-1); }
+});
+
+let paused = false, timer = null, inView = true;
+if ("IntersectionObserver" in window) {
+  new IntersectionObserver(function (es) { inView = es[0].isIntersecting; }, { threshold: 0.1 }).observe(track);
+}
+function startAuto() {
+  if (reduce || timer) return;
+  timer = setInterval(function () { if (!paused && inView && !document.hidden) step(1); }, 3800);
+}
+["mouseenter", "focusin", "touchstart"].forEach(function (ev) {
+  track.parentElement.addEventListener(ev, function () { paused = true; }, { passive: true });
+});
+["mouseleave", "focusout"].forEach(function (ev) {
+  track.parentElement.addEventListener(ev, function () { paused = false; });
+});
+track.parentElement.addEventListener("touchend", function () { setTimeout(function () { paused = false; }, 4000); }, { passive: true });
+startAuto();
+
+/* ---------- Modulo ---------- */
+const form = document.getElementById("form");
+const statusBox = document.getElementById("status");
+const btn = document.getElementById("invia");
+const email = document.getElementById("email");
+const tel = document.getElementById("telefono");
+
+function showStatus(msg, isErr) {
+  statusBox.textContent = msg;
+  statusBox.className = "status show" + (isErr ? " err" : "");
+  statusBox.focus();
+}
+function checkContact() {
+  const ok = email.value.trim() || tel.value.trim();
+  const msg = ok ? "" : "Inserisci almeno un'email o un numero di telefono.";
+  email.setCustomValidity(msg);
+  return !!ok;
+}
+email.addEventListener("input", checkContact);
+tel.addEventListener("input", checkContact);
+
+form.addEventListener("submit", async function (e) {
+  e.preventDefault();
+  checkContact();
+  if (!form.checkValidity()) { form.reportValidity(); return; }
+  if (form.action.indexOf("INSERISCI_QUI") !== -1) {
+    showStatus("Il modulo non è ancora attivo. Nel frattempo scrivimi su Instagram.", true);
+    return;
+  }
+  btn.disabled = true;
+  btn.textContent = "Invio in corso...";
+  try {
+    const r = await fetch(form.action, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } });
+    if (r.ok) {
+      form.reset();
+      showStatus("Richiesta inviata. Ti ricontatto appena possibile.", false);
+    } else {
+      throw new Error("risposta " + r.status);
+    }
+  } catch (err) {
+    showStatus("Invio non riuscito. Riprova tra poco o scrivimi in DM su Instagram.", true);
+  } finally {
+    btn.disabled = false;
+    btn.textContent = "Invia la richiesta";
+  }
+});
+</script>
+</body>
+</html>
